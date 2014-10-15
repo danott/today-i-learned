@@ -7,6 +7,14 @@
 
     <style>
       html {
+        box-sizing: border-box;
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      html {
         font-family: 'Source Code Pro';
         font-size: 16px;
         font-weight: 400;
@@ -20,7 +28,7 @@
         color: #93A1A1;
 
         line-height: 1.5;
-        padding: 0.6rem;
+        padding: 0.5rem;
       }
 
       body {
@@ -54,7 +62,7 @@
         word-wrap: break-word;
       }
 
-      @media screen and (min-width: 20px) {
+      @media screen and (min-width: 54rem) {
         h1::before {
           content: '#\ ';
           position: absolute;
