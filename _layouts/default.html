@@ -2,12 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400" rel="stylesheet" type="text/css">
 
     <style>
       html {
         font-family: 'Source Code Pro';
-        font-size: 13px;
+        font-size: 16px;
+        font-weight: 400;
 
         /* LIGHT */
         background: #FDF6E3;
@@ -18,41 +20,28 @@
         color: #93A1A1;
 
         line-height: 1.5;
-        padding: 0.6em;
+        padding: 0.6rem;
       }
 
       body {
-        font-size: 13px;
+        font-size: 1rem;
         max-width: 50rem;
         margin: 0 auto;
       }
 
       h1, h2 {
-        position: relative;
-        font-size: 1em;
+        font-size: 1rem;
         font-weight: inherit;
       }
 
       h1 {
         color: #D33682;
+        color: #DC322F;
       }
 
       h2 {
         color: #DC322F;
-      }
-
-      @media screen and (min-width: 44em) {
-        h1::before {
-          position: absolute;
-          content: '#\ ';
-          left: -1.2em;
-        }
-
-        h2::before {
-          position: absolute;
-          content: '##\ ';
-          left: -1.8em;
-        }
+        color: #B58900;
       }
 
       code {
@@ -61,6 +50,23 @@
         color: #2E8CCF;
       }
 
+      p code {
+        word-wrap: break-word;
+      }
+
+      @media screen and (min-width: 20px) {
+        h1::before {
+          content: '#\ ';
+          position: absolute;
+          margin-left: -1.2rem;
+        }
+
+        h2::before {
+          content: '##\ ';
+          position: absolute;
+          margin-left: -1.8rem;
+        }
+      }
     </style>
   </head>
   <body>
