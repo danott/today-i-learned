@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900" rel="stylesheet" type="text/css">
+
+    <style>
+      html {
+        font-family: 'Source Code Pro';
+        font-size: 13px;
+
+        /* LIGHT */
+        background: #FDF6E3;
+        color: #586E75;
+
+        /* DARK */
+        background: #002B36;
+        color: #93A1A1;
+
+        line-height: 1.5;
+        padding: 0.6em;
+      }
+
+      body {
+        font-size: 13px;
+        max-width: 50rem;
+        margin: 0 auto;
+      }
+
+      h1, h2 {
+        position: relative;
+        font-size: 1em;
+        font-weight: inherit;
+      }
+
+      h1 {
+        color: #D33682;
+      }
+
+      h2 {
+        color: #DC322F;
+      }
+
+      @media screen and (min-width: 44em) {
+        h1::before {
+          position: absolute;
+          content: '#\ ';
+          left: -1.2em;
+        }
+
+        h2::before {
+          position: absolute;
+          content: '##\ ';
+          left: -1.8em;
+        }
+      }
+
+      code {
+        font-family: inherit;
+        font-size: inherit;
+        color: #2E8CCF;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    {{ content }}
+
+    {% if site.environment == 'production' %}
+      {% include google_analytics_pageview.html %}
+    {% endif %}
+  </body>
+</html>

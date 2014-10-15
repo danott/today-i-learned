@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900" rel="stylesheet" type="text/css">
+
+    <style>
+      html {
+        font-family: 'Source Code Pro';
+        font-size: 13px;
+
+        /* LIGHT */
+        background: #FDF6E3;
+        color: #586E75;
+
+        /* DARK */
+        background: #002B36;
+        color: #93A1A1;
+
+        line-height: 1.5;
+        padding: 0.6em;
+      }
+
+      body {
+        font-size: 13px;
+        max-width: 50rem;
+        margin: 0 auto;
+      }
+
+      h1, h2 {
+        position: relative;
+        font-size: 1em;
+        font-weight: inherit;
+      }
+
+      h1 {
+        color: #D33682;
+      }
+
+      h2 {
+        color: #DC322F;
+      }
+
+      @media screen and (min-width: 44em) {
+        h1::before {
+          position: absolute;
+          content: '#\ ';
+          left: -1.2em;
+        }
+
+        h2::before {
+          position: absolute;
+          content: '##\ ';
+          left: -1.8em;
+        }
+      }
+
+      code {
+        font-family: inherit;
+        font-size: inherit;
+        color: #2E8CCF;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Today I Learned</h1>
+
+
+  <h2>Tue, 14 of Oct 2014</h2>
+  <p>I started making a <code>before_filter</code> that would redirect a request from a bot.
+After returning to the code, I decided it would be better to <code>rescue_from
+SomeCustomError, with: :what_was_previously_a_before_filter</code> so that the code
+did not have to run on every single request. This probably amounts to minimal
+performance gains in terms of actual execution time, but I think it brought
+clarity to the code by having the happy path occur first.</p>
+
+<p>Taking the time to organize your folders/files into something predictable needs
+to be done quickly when you’re working with branches of code. Every divergent
+branch means a delay in making it happen.</p>
+
+
+  <h2>Mon, 13 of Oct 2014</h2>
+  <p>Reminded of a proposal I made long ago. For responsive design, start at one
+size, and head in one direction, using either min-width or max-width, but not
+both.</p>
+
+<p>I spent time today moving some behavior of a model into a concern, specific to
+that model. Rather than putting it into
+<code>app/models/concerns/person_pending_request_count</code> I put it into
+<code>app/models/person/pending_request_count</code>. I liked this change, because it
+communicated that only Person should be using this. It’s not a general mixin,
+though it could easily become one. Then in the person class, I just included
+it with <code>include Person::PendingRequestCount</code>.</p>
+
+
+  <h2>Tue, 30 of Sep 2014</h2>
+  <p>Rails UJS’ <code>ajax:success</code> and <code>ajax:error</code> only apply to XHRs originating from
+a <code>data-remote="true"</code> source. If you’d like them to apply to all XHRs in your
+page or application, you’re gonna have to wire that up.</p>
+
+<p>In slim, you can use <code>&lt;</code>, <code>&gt;</code> or both after your tag to add leading or
+trailing whitespace, respectively.</p>
+
+
+
+
+    
+  </body>
+</html>
