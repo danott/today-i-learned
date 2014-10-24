@@ -9,7 +9,7 @@ There are many ways to write even the simplest statement.
 # Whitelisted arguments.  # Which is most readable while being concise?
 
 # 1
-trusted = %w[approve reject].find { |i| i == untrested }
+trusted = %w[approve reject].find { |i| i == untrusted }
 
 # 2
 trusted = (%w[approve reject] & [untrusted]).first
