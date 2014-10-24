@@ -16,4 +16,7 @@ trusted = (%w[approve reject] & [untrusted]).first
 
 # 3
 trusted = %w[approve reject].include?(untrusted) ? untrusted : nil
+
+# 4
+trusted = case untrusted; when *%w[approve reject]; untrusted; end
 {% endhighlight %}
