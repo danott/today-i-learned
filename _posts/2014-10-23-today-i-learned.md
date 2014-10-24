@@ -2,3 +2,18 @@ You can be incredibly productive, but feel unproductive. Fixing lots of small
 bugs leads to this. Keeping a list of everything completed such as Trello helps
 you remember that you're making a tons of small progress when it feels like
 you're not making any large progress.
+
+There are many ways to write even the simplest statement.
+
+{% highlight ruby %}
+# Whitelisted arguments.  # Which is most readable while being concise?
+
+# 1
+trusted = %w[approve reject].find { |i| i == untrested }
+
+# 2
+trusted = (%w[approve reject] & [untrusted]).first
+
+# 3
+trusted = %w[approve reject].include?(untrusted) ? untrusted : nil
+{% endhighlight %}
