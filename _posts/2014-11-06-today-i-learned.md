@@ -1,0 +1,6 @@
+Some random commands from tinkering with Vagrant today:
+
+- `dscacheutil -flushcache` # Flush the DNS cache
+
+JavaScript Array's `map` function takes a optional second argument, of what to
+bind to `this`.
