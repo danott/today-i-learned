@@ -10,7 +10,7 @@ if runtime.GOOS == "linux" {
 } else {
   http.ListenAndServe(":2112", nil)
 }
-{% /highlight %}
+{% endhighlight %}
 
 To cross-compile to Linux, you use the Go runtime flags.
 
