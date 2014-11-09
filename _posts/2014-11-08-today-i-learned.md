@@ -4,7 +4,7 @@ FactCGI to serve it up.
 I did this via a trivial conditional for my setup of developing on OSX, and
 deploying to Linux.
 
-```go
+```golang
 if runtime.GOOS == "linux" {
   fcgi.Serve(nil, nil)
 } else {
