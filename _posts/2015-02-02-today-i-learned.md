@@ -3,5 +3,5 @@ There is no magic for Rails' `enum` in fixtures. If you want to use the string v
 {% highlight yaml %}
 michael:
   name: Michael Bluth
-  occupation: <%= Person.occupoations[:actor] %> # because 'actor' won't do it
+  occupation: <%= Person.occupations[:actor] %> # because 'actor' won't do it
 {% endhighlight %}
