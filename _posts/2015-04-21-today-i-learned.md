@@ -1,0 +1,1 @@
+`<<-SOMETHING.strip_heredoc` in Ruby, to strip the heredoc, and align to the current level of indentation. [Doc](http://apidock.com/rails/String/strip_heredoc)
