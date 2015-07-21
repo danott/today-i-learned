@@ -1,0 +1,1 @@
+When using Bugsnag within a Rails app, you must use the `before_bugsnag_notify` within your `ApplicationController` (or similar) to add custom info. I tried to be clever, using the `Bugsnag.before_notify_callbacks` manually in an initializer. This didn't work. My assumption is that `Bugsnag.before_notify_callbacks.clear` is called somewhere internally in the `Railtie`.
