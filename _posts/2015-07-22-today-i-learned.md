@@ -1,3 +1,3 @@
-There are a lot of ways that payment can fail. Thankfully, Stipe provides ways to trigger almost every conceivable failure. And they put the credit card values that will trigger these failures into [a handy doc](https://stripe.com/docs/testing).
+There are a lot of ways that payment can fail. Thankfully, Stripe provides ways to trigger almost every conceivable failure. And they put the credit card values that will trigger these failures into [a handy doc](https://stripe.com/docs/testing).
 
 It's important to remember, some of these failures will occur when attempting to get a Stripe token. Others will fail when attempting to use the Stripe token.
