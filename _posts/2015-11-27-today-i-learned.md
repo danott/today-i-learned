@@ -1,7 +1,7 @@
 While playing with `webpack` in a Rails environment, there are still some variables I want to expose to the window.
 I came up with this 2-liner to treat exports from the top most bundle as global variables!
 
-```javascript
+```
 export { Whatever, You, Want }
 Object.assign(window, exports)
 ```
