@@ -1,7 +1,7 @@
 Multiple calls to `ReactDOM.render` can be a super powerful tool. Given a
 state-ful component `Counter`
 
-{% highlight jsx %}
+{% highlight javascript %}
 // Initial render into document.body
 React.render(<Counter count=0 />, document.body)
 // => { state: { count: 0 }, props: { count: 0 } }
