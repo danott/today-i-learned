@@ -9,4 +9,4 @@ test "something that depends on the session and the flash" do
   assert_equal session[:in], "the"
   refute_equal flash[:banana], "stand" # because the flash will have been flushed!
 end
-{% end %}
+{% endhighlight %}
