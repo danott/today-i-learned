@@ -1,4 +1,4 @@
-I'm almost wanting to configuring a Rails engines.
+I'm almost always wanting to configuring Rails engines when I make them.
 I've never taken the time to figure out how to configure them.
 It turns out that it's much simpler than I even imagined.
 
