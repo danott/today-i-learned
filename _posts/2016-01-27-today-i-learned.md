@@ -1,5 +1,5 @@
-I'm almost always wanting to configuring Rails engines when I make them.
-I've never taken the time to figure out how to configure them.
+I'm almost always wanting to add configuration hooks to Rails engines when I build them.
+Up to this point I've never taken the time to figure out the most succinct way to provide configuration hooks.
 It turns out that it's much simpler than I even imagined.
 
 {% highlight ruby %}
