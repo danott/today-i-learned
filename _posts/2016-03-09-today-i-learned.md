@@ -13,4 +13,8 @@ class Thing
     OtherThing.new(thing: self) # 2. don't associate the record with self
   end
 end
+
+thing = Thing.last
+thing.optimistic_version_of_other # I don't want this persisted
+thing.update(anything: "else")
 {% endhighlight %}
