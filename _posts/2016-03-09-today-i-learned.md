@@ -13,5 +13,4 @@ class Thing
     OtherThing.new(thing: self) # 2. don't associate the record with self
   end
 end
-end
 {% endhighlight %}
