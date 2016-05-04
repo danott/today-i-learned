@@ -6,7 +6,7 @@ With the variety of Babel plugins and configurations it's easy to have some tech
 export default {
   george: "Grandpa",
   michael: "Dad",
-  maeeby: "Cousin",
+  maeby: "Cousin",
 }
 
 // uses_family.js
