@@ -30,11 +30,11 @@ Showing my reasoning, elementary math style:
 
 There are two values, right?
 Here's my mistake.
-In my quest for object-oriented-message-sending-purityI interpreted `one?` to be the size of the array.
-But reading [the docs][], I'm reminded it's not a method about the size of the array.
-It's a method that passes each item in the array to a block, and returns true if exactly one of those return values truthy.
+In my quest for object-oriented-message-sending-purity I interpreted `one?` to be about the size of the array.
+But reading [the docs][], I'm reminded it's not a message about the size of the array.
+It's a message that passes each item in the array to a block, and returns true if exactly one of those return values truthy.
 Without an explicit block, the implicit block is the element itself.
-`1` is truty. `nil` is not.
+`1` is truty. `nil` is not, so yes, there is one truthy value.
 
 What I really wanted is `[1, nil].count == 1`.
 In the end, I reverted to some obvious as day boolean logic of `a == b && b == c`
