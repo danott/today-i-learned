@@ -36,7 +36,7 @@ Without an explicit block, the implicit block is the element itself.
 What I really wanted is `[1, nil].count == 1`.
 In the end, I reverted to some obvious as day boolean logic of `a == b && b == c`
 
-I'm glad I wrote test, because this particular error in this particular place would have led to a substantial security hole.
+I'm glad I wrote a test for something so small, because this particular error in this particular place would have led to a substantial security hole.
 
 Lesson learned: just because there's a nicely named message that _sounds_ right doesn't mean it's the method I want.
 
