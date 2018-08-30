@@ -9,7 +9,10 @@ c = nil
 [a, b, c].uniq.one?
 {% endhighlight %}
 
-I  expected that to return `false`.
+I expected that to return `false`.
+It was returning `true`
+
+🤔.
 
 Showing my reasoning, elementary math style:
 
