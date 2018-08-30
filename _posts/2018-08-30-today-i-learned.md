@@ -10,9 +10,9 @@ c = nil
 {% endhighlight %}
 
 I expected that to return `false`.
-It was returning `true`
+It was returning `true`.
 
-🤔.
+🤔
 
 Showing my reasoning, elementary math style:
 
