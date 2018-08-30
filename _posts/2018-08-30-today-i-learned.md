@@ -41,3 +41,4 @@ I'm glad I wrote test, because this particular error in this particular place wo
 Lesson learned: just because there's a nicely named message that _sounds_ right doesn't mean it's the method I want.
 
 
+[the docs]: https://ruby-doc.org/core-2.5.0/Enumerable.html#method-i-one-3F
