@@ -38,6 +38,6 @@ In the end, I reverted to some obvious as day boolean logic of `a == b && b == c
 
 I'm glad I wrote a test for something so small, because this particular error in this particular place would have led to a substantial security hole.
 
-Lesson learned: just because there's a nicely named message that _sounds_ right doesn't mean it's the method I want.
+Lesson learned: just because there's a nicely named message that _sounds_ right doesn't mean it's the message I want to send.
 
 [the docs]: https://ruby-doc.org/core-2.5.0/Enumerable.html#method-i-one-3F
