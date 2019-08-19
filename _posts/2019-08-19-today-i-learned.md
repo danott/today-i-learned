@@ -2,7 +2,7 @@
 
 For the last three years I've been developing day-to-day in Safari.
 Whenver this practice comes up in conversation the first question is "what about React Developer Tools?"
-Until now my answer was to drop into Chrome to use the developer toos.
+Until today my answer was to drop into Chrome.
 
 Today I discovered that `react-devtools` can be launched as a standalone application that can be connected to.
 
